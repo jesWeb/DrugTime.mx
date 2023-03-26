@@ -14,4 +14,9 @@ class typeUser extends Model
         'Puesto',
         'Tipo'
     ];
+
+    public function clientes() {
+        return $this->hasMany(clientes::class);
+
+    }
 }

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('Puesto');
             $table->integer('Tipo');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -24,4 +24,37 @@ class clientes extends Model
         'imagenU',
     ];
 
+    //relacion uno a muchos conexion de modelos de fuera  
+    //tipo user
+    public function typeUser(){
+        return $this->belongsTo(typeUser::class);
+    }
+
+    public function usersNews(){
+        return $this->belongsTo(usersNews::class);
+    }
+
+    public function cuidador(){
+        return $this->belongsTo(cuidador::class);
+    }
+
+
+    public function tratamiento(){
+        return $this->belongsTo(tratamiento::class);
+    }
+   
+    public function medicamento(){
+        return $this->belongsTo(medicamento::class);
+    }
+    
+    public function maquina(){
+        return $this->belongsTo(maquina::class);
+    }
+
+    public function estados(){
+        return $this->belongsTo(estados::class);
+    }
+
+    
+
 }

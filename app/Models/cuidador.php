@@ -21,4 +21,10 @@ class cuidador extends Model
         'email',
         'imagenP',
     ];
+
+    public function clientes() {
+        return $this->hasMany(clientes::class);
+
+    }
+
 }

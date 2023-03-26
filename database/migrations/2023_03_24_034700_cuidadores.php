@@ -26,6 +26,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->integer('imagenP');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

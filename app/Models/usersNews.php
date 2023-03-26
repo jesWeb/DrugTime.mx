@@ -14,5 +14,10 @@ class usersNews extends Model
         'email',
         'password'
     ];
+
+    public function clientes() {
+        return $this->hasMany(clientes::class);
+
+    }
     
 }

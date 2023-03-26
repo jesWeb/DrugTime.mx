@@ -14,18 +14,18 @@ return new class extends Migration
     public function up()
     {
         //
-        Schema::create('clientes', function (Blueprint $table) {
+        Schema::create('usuarios_new', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->date('fechaN');
-            $table->char('sexo');
-            $table->integer('peso');
-            $table->char('alergias');
-            $table->string('enfermedades');
-            $table->integer('Telefono');
-            $table->integer('imagenU');
+            $table->string('email')->unique();
+            $table->string('password');
             $table->timestamps();
+            //llave foranea
+           // $table->unsignedBigInteger('type_users_id');
+            //$table->foreign('type_users_id')->references('id')->on('type_users');
+            
+            $table->softDeletes();
         });
+
     }
 
     /**
@@ -36,6 +36,6 @@ return new class extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('clientes');
+        Schema::dropIfExists('usuarios_new');
     }
 };

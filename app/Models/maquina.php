@@ -15,4 +15,9 @@ class maquina extends Model
         'Modelo',
         'Humedad'
     ];
+    
+    public function clientes() {
+        return $this->hasMany(clientes::class);
+
+    }
 }

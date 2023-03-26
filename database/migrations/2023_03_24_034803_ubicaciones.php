@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('lugar');
             $table->string('piso');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -13,4 +13,9 @@ class estados extends Model
     protected $fillable =[
         'nombre'
     ];
+
+    public function clientes() {
+        return $this->hasMany(clientes::class);
+
+    }
 }

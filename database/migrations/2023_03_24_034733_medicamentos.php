@@ -21,6 +21,10 @@ return new class extends Migration
             $table->string('Tipo');
             $table->Integer('imagenM');
             $table->timestamps();
+             //llaves foraneas
+             $table->unsignedBigInteger('tratamientos_id');
+             $table->foreign('tratamientos_id')->references('id')->on('tratamientos');
+            $table->softDeletes();
         });
     }
 
