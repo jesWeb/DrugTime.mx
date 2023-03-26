@@ -8,13 +8,13 @@
     <script src="{{asset('js/jquery-3.3.1.js')}}"></script>
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <title>Ingresa</title>
+    <title>Inniciar sesion</title>
 </head>
 
 <body>
 
     <div class="container">
-        
+
         <div class="row justify-content-center mt-5 ">
             <!-- form  -->
             <h1 class="text-center h3 m-3">Iniciar sesión o crear una cuenta</h1>
@@ -24,19 +24,19 @@
                     <hr>
                     <p>Si tienes una cuenta, inicia sesión con tu correo electrónico.</p>
                 </div>
-                <form name="login" action="" method="GET">
+                <form name="login" action="{{route('validar')}}" method="GET">
                     {{csrf_field()}}
                     <!-- mail -->
                     <div class="foarm-floating p-2">
                         <label for="floatingInput">Email</label>
-                        <input type="text" class="form-control" placeholder="@gmail.com" id="email" name="email"
+                        <input type="text" class="form-control" placeholder="Tu@gmail.com" id="email" name="email"
                             value="">
 
                     </div>
                     <!-- password -->
                     <div class="foarm-floating mt-3 p-2">
                         <label for="floatingInput">Contraseña</label>
-                        <input type="text" class="form-control" id="pass" name="pass" placeholder="*****" value="">
+                        <input type="text" class="form-control" id="pass" name="pass" placeholder="password" value="">
 
                     </div>
 

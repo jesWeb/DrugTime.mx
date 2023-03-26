@@ -20,8 +20,8 @@ Route::get('/', function () {
 //routs utilizables
 //-----------LOGIN-and Register------------//
 Route::resource('login',loginController::class);
-Route::resource('validar',loginController::class);
-Route::resource('logout',loginController::class);
+Route::name('validar')->get('validar',[loginController::class,'validar']);
+Route::name('logout')->get('logout',[loginController::class,'logout']);
 Route::resource('registro',UsersNController::class);
 //------------------------//
 //Route::resource('registros',registerUController::class);
