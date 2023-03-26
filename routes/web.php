@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UsersNewsController;
+use App\Http\Controllers\UsersNController;
 use App\Http\Controllers\loginController;
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::resource('login',loginController::class);
 Route::resource('validar',loginController::class);
 Route::resource('logout',loginController::class);
-Route::resource('registro',UsersNewsController::class);
+Route::resource('registro',UsersNController::class);
 //------------------------//
 //Route::resource('registros',registerUController::class);
 //Route::resource('cliente',TbClientesController::class);

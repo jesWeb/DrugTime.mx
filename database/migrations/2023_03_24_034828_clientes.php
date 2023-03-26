@@ -30,8 +30,8 @@ return new class extends Migration
             $table->unsignedBigInteger('type_users_id');
             $table->foreign('type_users_id')->references('id')->on('type_users');
             //registro de usuarios
-            $table->unsignedBigInteger('usuarios_new_id');
-            $table->foreign('usuarios_new_id')->references('id')->on('usuarios_new');
+            $table->unsignedBigInteger('users_news_id');
+            $table->foreign('users_news_id')->references('id')->on('users_news');
             //cuidadores 
             $table->unsignedBigInteger('cuidadores_id');
             $table->foreign('cuidadores_id')->references('id')->on('cuidadores');

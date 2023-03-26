@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\usersNews;
-class UsersNewsController extends Controller
+class UsersNController extends Controller
 {
     //
     public function index()
