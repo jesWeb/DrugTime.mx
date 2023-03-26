@@ -35,7 +35,4 @@ Route::resource('medicamento',MedicamentoController::class);
 Route::resource('tratamiento',TratamientoController::class);
 Route::resource('Drugslide',MaquinaController::class);
 
-//Route::resource('registros',registerUController::class);
-//Route::resource('medicamentos',tb_medicamentos::class);
-//Route::resource('tratamiento',TbTratamientosController::class);
-//Route::resource('cuidador',TbCuidadoresController::class);
+

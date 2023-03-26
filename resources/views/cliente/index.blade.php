@@ -8,73 +8,69 @@
 @endsection
 
 <div class="container-fluid">
-    <div class="mb-5">
-        <!--titulo -->
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h2 mb-0 text-gray-800">Tratamientos del dia  </h1>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-3">
+        <div class="card-header py-3">
+            <h3 class="m-1 font-weight-bold text-primary">Tu medicacion del dia</h3>
         </div>
-        <!-- contenido de medicamentos del dia  -->
-        <div class="row">
-            <!-- card-1 -->
-            <div class="col-4">
-                <div class="card cards-today rounded">
-                    hola
+
+        <div class="mb-5 mt-5">
+            <!-- contenido de medicamentos del dia  -->
+            <div class="row">
+                <!-- card-1 -->
+                <div class="col-4">
+                    <div class="card cards-today rounded">
+                        hola
+                    </div>
                 </div>
-            </div>
-            <!--card-2  -->
-            <div class="col-4">
-                <div class="card cards-today rounded">
-                    hola
+                <!--card-2  -->
+                <div class="col-4">
+                    <div class="card cards-today rounded">
+                        hola
+                    </div>
                 </div>
+                <!-- card-3-->
+                <div class="col-4">
+                    <div class="card cards-today rounded">
+                        hola
+                    </div>
+                </div>
+
             </div>
-            <!-- card-3-->
-            <div class="col-4">
-                <div class="card cards-today rounded">
-                    hola
+        </div>
+        <!--proximos tratamientos -->
+        <div class="mt-4">
+            <!--titulo -->
+            <div class="card shadow mb-3">
+                <div class="card-header py-3">
+                    <h3 class="m-1 font-weight-bold text-primary"> tratamientos</h3>
+                </div>
+                <!-- contenido de medicamentos del dia  -->
+                <div class="row">
+                    <!-- card-1 -->
+                    <div class="col-4">
+                        <div class="card cards-today rounded">
+                            hola
+                        </div>
+                    </div>
+                    <!--card-2  -->
+                    <div class="col-4">
+                        <div class="card cards-today rounded">
+                            hola
+                        </div>
+                    </div>
+                    <!-- card-3-->
+                    <div class="col-4">
+                        <div class="card cards-today rounded">
+                            hola
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
-    </div>
-    <!--proximos tratamientos -->
-    <div class="mt-4">
-        <!--titulo -->
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h4 mb-0 text-gray-800">proximos tratamientos </h1>
-        </div>
-        <!-- contenido de medicamentos del dia  -->
-        <div class="row">
-            <!-- card-1 -->
-            <div class="col-4">
-                <div class="card cards-today rounded">
-                    hola
-                </div>
-            </div>
-            <!--card-2  -->
-            <div class="col-4">
-                <div class="card cards-today rounded">
-                    hola
-                </div>
-            </div>
-            <!-- card-3-->
-            <div class="col-4">
-                <div class="card cards-today rounded">
-                    hola
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
 
 </div>
-@include('layouts.footer')
+    @include('layouts.footer')
