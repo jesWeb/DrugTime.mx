@@ -7,6 +7,7 @@ use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\CuidadorController;
 use App\Http\Controllers\MedicamentoController;
 use App\Http\Controllers\TratamientoController;
+use App\Http\Controllers\MaquinaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,6 +33,7 @@ Route::resource('cliente',ClientesController::class);
 Route::resource('cuidador',cuidadorController::class);
 Route::resource('medicamento',MedicamentoController::class);
 Route::resource('tratamiento',TratamientoController::class);
+Route::resource('Drugslide',MaquinaController::class);
 
 //Route::resource('registros',registerUController::class);
 //Route::resource('medicamentos',tb_medicamentos::class);

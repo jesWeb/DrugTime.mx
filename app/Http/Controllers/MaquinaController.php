@@ -10,7 +10,7 @@ class MaquinaController extends Controller
     public function index()
     {
          //vista
-         return view('maquina.index');
+         return view('maquinas.index');
         
      } 
 }
