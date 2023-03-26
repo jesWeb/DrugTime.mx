@@ -7,4 +7,10 @@ use Illuminate\Http\Request;
 class MedicamentoController extends Controller
 {
     //
+    public function index()
+    {
+         //vista
+         return view('medicamentos.index');
+        
+     } 
 }

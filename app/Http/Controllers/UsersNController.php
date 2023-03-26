@@ -24,7 +24,7 @@ class UsersNController extends Controller
       //guardamos datos en BD 
       $registros->save();
       //vista
-      //return redirect()->route('cliente');
+    return redirect()->route('cliente.info');
 
   }
 
