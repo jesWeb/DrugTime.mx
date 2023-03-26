@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UsersNewsController;
+use App\Http\Controllers\loginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//routs utilizables
+//-----------LOGIN-and Register------------//
+Route::resource('login',loginController::class);
+Route::resource('validar',loginController::class);
+Route::resource('logout',loginController::class);
+Route::resource('registro',UsersNewsController::class);
+//------------------------//
+//Route::resource('registros',registerUController::class);
+//Route::resource('cliente',TbClientesController::class);
+//Route::resource('medicamentos',tb_medicamentos::class);
+//Route::resource('tratamiento',TbTratamientosController::class);
+//Route::resource('cuidador',TbCuidadoresController::class);
